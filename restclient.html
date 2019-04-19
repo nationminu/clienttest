@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy"  content="connect-src * 'unsafe-inline';">
+        <style>
+            table    { border: 2px solid black; }
+            input    { width: 500px; }
+            input[type=button]  { width: 100px; }
+            input[type=submit]  { width: 100px; } 
+            select   { width: 100px; }
+            textarea { width: 513px; border: 2px solid black; }
+            #btnConnect    { width: 100px; }
+            #btnDisconnect { width: 100px; }
+            #btnSend       { width: 100px; }
+        </style>  
+    </head>
+    <body>
+
+         <h1>Rest Client</h1>
+
+        <table>
+            <tr> 
+                <td>
+                    <form action="restclient.jsp" method="POST"> 
+                        <input type="text" name="url" size="50" value="http://dummy.restapiexample.com/api/v1/employees"/>  
+                        <select name="method">
+                            <option value="GET">GET</option>
+                            <option value="POST">POST</option>
+                        </select><BR>
+                        <input type="submit" value="SUBMIT"/>
+                    </form>
+                </td>
+            </tr>  
+        </table>  
+</body>
+</html>

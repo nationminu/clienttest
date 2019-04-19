@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy"  content="connect-src * 'unsafe-inline';">
+        <style>
+            table    { border: 2px solid black; }
+            input    { width: 300px; }
+            input[type=button]  { width: 100px; }
+            select   { width: 300px; }
+            textarea { width: 513px; border: 2px solid black; }
+            #btnConnect    { width: 100px; }
+            #btnDisconnect { width: 100px; }
+            #btnSend       { width: 100px; }
+        </style>  
+    </head>
+    <body>
+        <h1>Sample Application</h1>
+
+        <table>
+            <tr>
+                <td width="200px">RestClient </td>
+                <td>
+                    <input type="button" onclick="location.href='restclient.html'" value="move"/>
+                </td>
+            </tr> 
+            <tr>
+                <td width="200px">Websocket </td>
+                <td>
+                    <input type="button" onclick="location.href='client.html'" value="move"/>
+                </td>
+            </tr> 
+        </table> 
+    </body>
+</html>
